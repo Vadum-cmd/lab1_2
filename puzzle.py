@@ -21,8 +21,9 @@ def check_board_rows_and_cols(board: list) -> bool:
 
 
 def check_board_color(board: list) -> bool:
-
-    # Check if data in color cells is unique
+    """
+    Check if data in color cells is unique.
+    """
     for color_row_indx in range(0, 5):
         unique_color_data = set()
         #print("next color")
@@ -45,8 +46,9 @@ def check_board_color(board: list) -> bool:
 
 
 def validate_board(board: list) -> bool:
-    # Check if board configuration for rows, columns and colors is valid
-
+    """
+    Check if board configuration for rows, columns and colors is valid.
+    """
     if check_board_rows_and_cols(board):
         if check_board_color(board):
             return True
@@ -54,7 +56,6 @@ def validate_board(board: list) -> bool:
     return False
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     board = [
         "**** ****",
