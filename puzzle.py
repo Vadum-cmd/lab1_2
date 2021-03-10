@@ -1,4 +1,7 @@
 def check_board_rows_and_cols(board: list) -> bool:
+    """
+    Checking unique symbols.
+    """
     for indx in range(len(board)):
         unique_row_data = set()
         unique_col_data = set()
