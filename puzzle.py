@@ -1,5 +1,3 @@
-# Vadum Treskot, Lab1_2
-
 def check_board_rows_and_cols(board: list) -> bool:
     for indx in range(len(board)):
         unique_row_data = set()
@@ -20,6 +18,7 @@ def check_board_rows_and_cols(board: list) -> bool:
                 else:
                     unique_col_data.add(int(tmp_data))
     return True
+
 
 def check_board_color(board: list) -> bool:
 
@@ -53,6 +52,7 @@ def validate_board(board: list) -> bool:
             return True
 
     return False
+
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
