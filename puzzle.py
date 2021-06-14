@@ -1,3 +1,7 @@
+"""
+This module creates a board for puzzle game.
+Git link: https://github.com/Vadum-cmd/lab1_2
+"""
 def check_board_rows_and_cols(board: list) -> bool:
     """
     Checking unique symbols.
